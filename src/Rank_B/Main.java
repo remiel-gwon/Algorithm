@@ -1,4 +1,4 @@
-package test2;
+package Rank_B;
 
 public class Main {
     public static void main(String[] args){
