@@ -28,22 +28,22 @@ public class Main {
 
         int a = bk.nextInt();
         int[] b = new int[a];
+        int num;
 
         for (int i = 0; i < a; i++) {
             b[i] = bk.nextInt();
         }
 
-        int num2 = 0;
-        for (int i = 0; i < b.length; i++) {
-            num2 = 0;
+        for(int i = 0; i < b.length; i++) {
+            num = 0;
             for (int k = 1; k < b[i]; k++) {
                 if (b[i] % k == 0) {
-                    num2 += k;
+                    num += k;
                 }
             }
-            if (num2 == b[i]) {
+            if (num == b[i]) {
                 System.out.println("perfect");
-            } else if (Math.abs(b[i] - num2) == 1) {
+            } else if (Math.abs(b[i] - num) == 1) {
                 System.out.println("nearly");
             } else {
                 System.out.println("neither");
